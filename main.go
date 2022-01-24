@@ -47,6 +47,12 @@ func canIDrink(age int) bool {
 	return true
 }
 
+type person struct {
+	name    string
+	age     int
+	favFood []string
+}
+
 func main() {
 	// fmt.Println(multiply(2, 2))
 	// totallength, _ := lenAndUpper("nico")
@@ -73,10 +79,15 @@ func main() {
 	// names = append(names, "asd")
 	// fmt.Println(names)
 
-	nico := map[string]int{"aaa": 111, "sss": 222}
+	// nico := map[string]int{"aaa": 111, "sss": 222}
+	// fmt.Println(nico)
+	// for _, value := range nico {
+	// 	fmt.Println(value)
+	// }
+
+	favFood := []string{"asdasd", "qweqwe"}
+	// nico := person{"nico", 18, favFood}
+	nico := person{name: "asd", age: 11, favFood: favFood}
 	fmt.Println(nico)
-	for _, value := range nico {
-		fmt.Println(value)
-	}
 
 }
