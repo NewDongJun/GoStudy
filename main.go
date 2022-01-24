@@ -69,8 +69,14 @@ func main() {
 	// fmt.Println(&a, *b)
 
 	// names := [5] string {"aaa", "asdasd", "asdasd"}
-	names := []string{"asdas", "aaa", "qweqwe"}
-	names = append(names, "asd")
-	fmt.Println(names)
+	// names := []string{"asdas", "aaa", "qweqwe"}
+	// names = append(names, "asd")
+	// fmt.Println(names)
+
+	nico := map[string]int{"aaa": 111, "sss": 222}
+	fmt.Println(nico)
+	for _, value := range nico {
+		fmt.Println(value)
+	}
 
 }
