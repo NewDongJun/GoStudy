@@ -62,10 +62,15 @@ func main() {
 
 	// fmt.Println(canIDrink(16))
 
-	a := 2
-	b := &a
-	a = 5
-	*b = 20
-	fmt.Println(&a, *b)
+	// a := 2
+	// b := &a
+	// a = 5
+	// *b = 20
+	// fmt.Println(&a, *b)
+
+	// names := [5] string {"aaa", "asdasd", "asdasd"}
+	names := []string{"asdas", "aaa", "qweqwe"}
+	names = append(names, "asd")
+	fmt.Println(names)
 
 }
