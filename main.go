@@ -40,6 +40,13 @@ func superAdd(numbers ...int) int {
 	return total
 }
 
+func canIDrink(age int) bool {
+	if koreanAge := age + 2; koreanAge < 18 {
+		return false
+	}
+	return true
+}
+
 func main() {
 	// fmt.Println(multiply(2, 2))
 	// totallength, _ := lenAndUpper("nico")
@@ -50,7 +57,9 @@ func main() {
 
 	// repeatMe("nico", "lynn", "ann")
 
-	result := superAdd(1, 2, 3, 4, 5, 6)
-	fmt.Println(result)
+	// result := superAdd(1, 2, 3, 4, 5, 6)
+	// fmt.Println(result)
+
+	fmt.Println(canIDrink(16))
 
 }
