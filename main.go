@@ -8,5 +8,10 @@ import (
 
 func main() {
 	account := banking.NewAccount("dong")
-	fmt.Println(account)
+	account.Deposit(10)
+	err := account.Withdraw(20)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(account.Banlance())
 }
