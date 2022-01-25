@@ -14,4 +14,6 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(account.Banlance())
+	fmt.Println(account.Owner())
+	fmt.Println(account)
 }
