@@ -3,17 +3,25 @@ package main
 import (
 	"fmt"
 
-	"github.com/newdongjun/GoStudy/banking"
+	"github.com/newdongjun/GoStudy/mydict"
 )
 
 func main() {
-	account := banking.NewAccount("dong")
-	account.Deposit(10)
-	err := account.Withdraw(20)
+	dictionary := mydict.Dictionary{"first": "First word"}
+	// definition, err := dictionary.Search("first")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// } else {
+	// 	fmt.Println(definition)
+	// }
+
+	word := "hello"
+	definition := "Greeting"
+	err := dictionary.Add(word, definition)
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(account.Banlance())
-	fmt.Println(account.Owner())
-	fmt.Println(account)
+	hello, _ := dictionary.Search(word)
+	fmt.Println(hello)
+
 }
